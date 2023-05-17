@@ -14,7 +14,7 @@ async def on_ready():
     print(f'We have logged in as{client.user}')
 
 @client.event
-async def on_message(message: discord.Message):
+async def on_message(message):
     # メッセージの送信者がbotだった場合は無視する
     if message.author.bot:
         return
