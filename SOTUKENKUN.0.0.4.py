@@ -11,7 +11,7 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print(f'We have logged in as{client.user}')
-    channel = client.get_channel(1096803719053590619)
+    channel = client.get_channel(console_channel_id)
     await channel.send("login success")
 
 @client.event
