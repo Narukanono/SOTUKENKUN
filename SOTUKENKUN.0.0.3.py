@@ -1,5 +1,4 @@
 import discord
-import asyncio
 import logging
 
 handler = logging.FileHandler(filename='sotukenkun.log', encoding='utf-8', mode='w')
