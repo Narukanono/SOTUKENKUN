@@ -19,6 +19,10 @@ Ver.0.0.5のアップデートからトークンと簡易コンソールチャ�
 ・新しいファイルを作成し、「.env」というファイルを作成してください。
 ＝＝＞ファイルに名前はつけないでください。拡張子のみでないと動きません。ダメな例「example.env」
 ・書くものというところを書いてください(your~hereのところは各自変えてください)
+```env:.env
+console_channel_id=your_console_channel_here
+TOKEN='your_token_here'
+```
 | 書くもの | 役割 |
 | :--- | :--- |
 | console_channel_id=your_console_channel_here | 簡易コンソールチャンネル |
