@@ -1,6 +1,8 @@
 # SOTUKENKUN
 卒業研究で作っているBOTの記録です。<br>
 ふ～ん程度に見てもらえると嬉しいです！<br>
+<br>
+[サポートサーバー](https://discord.gg/GdxpBmbdG7)（Discord）
 ## 理想の完成像
 やりたいこと
 - **大前提としてDiscordのBOTを作成する**
