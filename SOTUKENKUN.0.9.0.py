@@ -64,7 +64,7 @@ async def on_ready():
     #チャンネルIDが入っていない場合に「コンソール」にエラーを送る
     else:
         print(f"コンソールチャンネルのIDが正しく入力されていません。.envファイルをご確認ください。")
-    
+
 #help
 @tree.command(name="shelp",description="ヘルプを表示します。")
 async def shelp(interaction: discord.Interaction):
@@ -76,7 +76,6 @@ async def shelp(interaction: discord.Interaction):
     help.add_field(name="/sleave",value="BOTをボイスチャンネルから切断させます。うまく動かないときや終了するときにお試しください。")
     help.add_field(name="/sping",value="BOTのPing値を確認できます。")
     await interaction.response.send_message(embed=help)
-
 
 #join
 @tree.command(name="sjoin",description="BOTをVCに接続します。")
@@ -95,7 +94,7 @@ async def join(interaction: discord.Interaction):
 #sspeakers
 @tree.command(name="sspeakers",description="VOICEVOXの話者一覧です。")
 async def sspeakers(interaction: discord.Interaction):
-    speakers = discord.Embed(title="VOICEVOXの話者一覧です。（ノーマルのみ）")
+    speakers = discord.Embed(title="VOICEVOXの話者一覧です。（ノーマルのみ記載）Ver.0.14.7")
     speakers.add_field(name="四国めたん　ノーマル",value=2)
     speakers.add_field(name="ずんだもん　ノーマル",value=3)
     speakers.add_field(name="春日部つむぎ　ノーマル",value=8)
@@ -115,7 +114,46 @@ async def sspeakers(interaction: discord.Interaction):
     speakers.add_field(name="櫻歌ミコ　ノーマル",value=43)
     speakers.add_field(name="小夜/SAYO　ノーマル",value=46)
     speakers.add_field(name="ナースロボ＿タイプT　ノーマル",value=47)
+    speakers.add_field(name="†聖騎士 紅桜†　ノーマル",value=51)
+    speakers.add_field(name="雀松朱司　ノーマル",value=52)
+    speakers.add_field(name="麒ヶ島宗麟　ノーマル",value=53)
+    speakers.add_field(name="春歌ナナ　ノーマル",value=54)
+    speakers.add_field(name="猫使アル　ノーマル",value=55)
+    speakers.add_field(name="猫使ビィ　ノーマル",value=58)
+    speakers.add_field(name="中国うさぎ　ノーマル",value=61)
     await interaction.response.send_message(embed=speakers)
+
+#svoicevoxcredits
+@tree.command(name="svoicevoxcredits",description="読み上げに使用しているVOICEVOXのクレジットです。")
+async def svoicevoxcredits(interaction: discord.Interaction):
+    credits = discord.Embed(title="VOICEVOXのクレジットです。Ver.0.14.7")
+    credits.add_field(name="VOICEVOX:四国めたん")
+    credits.add_field(name="VOICEVOX:ずんだもん")
+    credits.add_field(name="VOICEVOX:春日部つむぎ")
+    credits.add_field(name="VOICEVOX:雨晴はう")
+    credits.add_field(name="VOICEVOX:波音リツ")
+    credits.add_field(name="VOICEVOX:玄野武宏")
+    credits.add_field(name="VOICEVOX:白上虎太郎")
+    credits.add_field(name="VOICEVOX:青山龍星")
+    credits.add_field(name="VOICEVOX:冥鳴ひまり")
+    credits.add_field(name="VOICEVOX:九州そら")
+    credits.add_field(name="VOICEVOX:もち子(cv 明日葉よもぎ)")
+    credits.add_field(name="VOICEVOX:剣崎雌雄")
+    credits.add_field(name="VOICEVOX:WhiteCUL")
+    credits.add_field(name="VOICEVOX:後鬼")
+    credits.add_field(name="VOICEVOX:No.7")
+    credits.add_field(name="VOICEVOX:ちび式じい")
+    credits.add_field(name="VOICEVOX:櫻歌ミコ")
+    credits.add_field(name="VOICEVOX:小夜/SAYO")
+    credits.add_field(name="VOICEVOX:ナースロボ＿タイプＴ")
+    credits.add_field(name="VOICEVOX:†聖騎士 紅桜†")
+    credits.add_field(name="VOICEVOX:雀松朱司")
+    credits.add_field(name="VOICEVOX:麒ヶ島宗麟")
+    credits.add_field(name="VOICEVOX:春歌ナナ")
+    credits.add_field(name="VOICEVOX:猫使アル")
+    credits.add_field(name="VOICEVOX:猫使ビィ")
+    credits.add_field(name="VOICEVOX:中国うさぎ")
+    await interaction.response.send_message(embed=credits)
 
 #sschange
 @tree.command(name="sschenge",description="話者をIDを使って変更します")
@@ -148,7 +186,6 @@ async def on_message(message):
         if (message.guild.voice_client.is_playing()):
             return
         message.guild.voice_client.play(discord.FFmpegPCMAudio(executable=os.getenv("ffmpeg_file_path"), source=filepath))
-
 
 #leave
 @tree.command(name="sleave",description="BOTをVCから切断します。")
