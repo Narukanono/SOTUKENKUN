@@ -24,7 +24,7 @@ Ver.0.0.5のアップデートからトークンと簡易コンソールチャ�
 ・書くものというところを書いてください(your~hereのところは各自変えてください)
 ```env:.env
 console_channel_id=your_console_channel_here
-ffmpeg_file_path='your_ffmpeg_exefile_path'
+ffmpeg_file_path='your_ffmpeg_exefile_path_here'
 TOKEN='your_token_here'
 ```
 | 書くもの | 役割 |
