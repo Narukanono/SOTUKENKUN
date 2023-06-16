@@ -9,7 +9,7 @@ VOICEVOX:白上虎太郎
 VOICEVOX:青山龍星
 VOICEVOX:冥鳴ひまり
 VOICEVOX:九州そら
-VOICEVOX:もち子さん
+VOICEVOX:もち子(cv 明日葉よもぎ)
 VOICEVOX:剣崎雌雄
 VOICEVOX:WhiteCUL
 VOICEVOX:後鬼
@@ -18,3 +18,12 @@ VOICEVOX:ちび式じい
 VOICEVOX:櫻歌ミコ
 VOICEVOX:小夜/SAYO
 VOICEVOX:ナースロボ＿タイプＴ
+VOICEVOX:†聖騎士 紅桜†
+VOICEVOX:雀松朱司
+VOICEVOX:麒ヶ島宗麟
+VOICEVOX:春歌ナナ
+VOICEVOX:猫使アル
+VOICEVOX:猫使ビィ
+VOICEVOX:中国うさぎ
+
+VOICEVOX_Version:Ver.0.14.7
