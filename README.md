@@ -78,3 +78,5 @@ TOKEN='your_token_here'
 | Ver.0.0.1 |
 | :--- |
 | [Discord.py](https://discordpy.readthedocs.io/ja/latest/quickstart.html)そのままです。() |
+## VOICEVOXのクレジット
+使用しているVOICEVOCのクレジットはファイル[voicevox_credit.txt](https://github.com/Narukanono/SOTUKENKUN/blob/main/voicevox_credit.txt)をご覧ください。
