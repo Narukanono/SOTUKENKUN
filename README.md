@@ -2,17 +2,19 @@
 卒業研究で作っているBOTの記録です。<br>
 ふ～ん程度に見てもらえると嬉しいです！<br>
 <br>
-[サポートサーバー](https://discord.gg/GdxpBmbdG7)（Discord）
+[サポートサーバ](https://discord.gg/GdxpBmbdG7)（Discord）<br>
+<br>
+[BOTの招待リンク](https://discord.com/api/oauth2/authorize?client_id=1096786729593225266&permissions=8&scope=bot)
 ## 理想の完成像
 やりたいこと
 - **大前提としてDiscordのBOTを作成する**
-- VOICE VOXを使用したVC読み上げを作成する
+- VOICEVOXを使用したVC読み上げを作成する
 - ユーザーごとに声を変えられるようにする
 - /コマンドに対応する。
 - その他の便利機能も時間が許してくれる限り作りたい
 ## バージョン情報
-最新バージョン Ver.0.9.0<br>
-**これは完全版(正式リリース)ではありません**
+### 祝　正式版リリース
+最新バージョン Ver.1.0.0<br>
 ## .envファイルについて
 Ver.0.0.5のアップデートからトークンと簡易コンソールチャンネルを.envファイルから読み取るように変更しました。<br>
 そのため、今後の利用には.pyファイルはいじらずに.envファイルを作成してもらう必要がございます。<br>
@@ -34,6 +36,12 @@ TOKEN='your_token_here'
 | TOKEN='your_token_here' | トークン |
 ## バージョンごとの変更点
 ### 最新リリース
+| Ver.1.0.0 |
+| :--- |
+| speakerのデータを１ユーザごとに保存するようになりました。 |
+| それに伴い保存フォルダのdataを無ければ作成するようになりました。 |
+| さらにたくさんの人にわかりやすくするためにコメントを増やしました。 |
+### 旧リリース
 | Ver.0.9.0 |
 | :--- |
 | helpコマンドを追加しました。 |
@@ -42,7 +50,7 @@ TOKEN='your_token_here'
 | svoicevoxcreditsコマンドを追加しました。 |
 | schengeコマンドを追加しました。 |
 | pingコマンドとほぼ変わらないためtestコマンドを削除しました。 |
-### 旧リリース
+####
 | Ver.0.0.7 |
 | :--- |
 | スラッシュコマンドに対応しました。 |
@@ -80,4 +88,4 @@ TOKEN='your_token_here'
 | :--- |
 | [Discord.py](https://discordpy.readthedocs.io/ja/latest/quickstart.html)そのままです。() |
 ## VOICEVOXのクレジット
-使用しているVOICEVOCのクレジットはファイル[voicevox_credit.txt](https://github.com/Narukanono/SOTUKENKUN/blob/main/voicevox_credit.txt)をご覧ください。
+使用しているVOICEVOCのクレジットはファイル[voicevox_credit.txt](https://github.com/Narukanono/SOTUKENKUN/blob/main/voicevox_credit.txt)またはBOTのコマンド「/svoicevoxcredits」をご覧ください。
