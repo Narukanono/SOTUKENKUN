@@ -252,7 +252,6 @@ async def on_voice_state_update(member, before, after):
 #sleave
 @tree.command(name="sleave",description="BOTをVCから切断します。")
 async def sleave(interaction: discord.Interaction):
-    print("start /tleave")
     global connect
     if connect == 0:
             await interaction.response.send_message("BOTがVCにいないため切断できません。")
