@@ -31,11 +31,11 @@ ddn = datetime.datetime.now()
 #ddtに今日の日付を入れる
 ddt = datetime.date.today()
 #現在の「年-月-日」というフォルダが無いことの確認
-if not os.path.isdir(f"./testerlog/{ddt}"):
+if not os.path.isdir(f"./log/{ddt}"):
     #無いので作成
-    os.makedirs(f"./testerlog/{ddt}")
+    os.makedirs(f"./log/{ddt}")
 #先ほど作ったフォルダの中に現在の「時間-分-秒.log」というファイル名でログファイルを作成
-handler = logging.FileHandler(filename=f'./testerlog/{datetime.date.today()}/{ddn.hour}-{ddn.minute}-{ddn.second}.log', encoding='utf-8', mode='w')
+handler = logging.FileHandler(filename=f'./log/{datetime.date.today()}/{ddn.hour}-{ddn.minute}-{ddn.second}.log', encoding='utf-8', mode='w')
 
 intents = discord.Intents.default()
 client =  discord.Client(intents=intents)
